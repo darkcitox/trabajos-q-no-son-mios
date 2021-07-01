@@ -1,19 +1,19 @@
 import random
-number = random.randint(1, 10)
+numero = random.randint(1, 10)
 
-number_of_guesses = 0
+intentos = 0
 print('Adivina el número del 1 al 10:')
 
-while number_of_guesses < 3:
-    guess = int(input())
-    number_of_guesses += 1
-    if guess < number:
+while intentos < 3:
+    intento = int(input())
+    intentos += 1
+    if intento < numero:
         print('Casi, intentalo denuevo')
-    if guess > number:
+    if intento > numero:
         print('Casi, intentalo denuevo')
-    if guess == number:
+    if intento == numero:
         break
-if guess == number:
-    print('Lo lograste ' + str(number_of_guesses) + ' intentos')
+if intento == numero:
+    print('Lo lograste ' + str(intentos) + ' intentos')
 else:
-    print('Casi, el número era ' + str(number))
+    print('Casi, el número era ' + str(numero))
