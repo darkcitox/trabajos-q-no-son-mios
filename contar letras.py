@@ -1,14 +1,14 @@
-string = input("Escribe algo y contaré las letras")
+texto = input("Escribe algo y contaré las letras")
 
 
-def letras(string):
+def letras(texto):
     lcount = 0
-    for c in string:
+    for c in texto:
         if c.isalpha():
             lcount += 1
     return lcount
 
 
-letters = letras(string)
+letters = letras(texto)
 
 print("Cantidad de letras : ", letters)
